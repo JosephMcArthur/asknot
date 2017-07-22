@@ -104,6 +104,9 @@ The below template allows us to track outbound links without bit-lys or anything
     <div class="group" id="progornoprog">
       <span class="question" data-l10n-id="progquestion"></span>
       <ul class="choices">
+
+<!-- These are the initial choices people can make to find actions they might be interested in. Next group specifics what's seen in the domain and where to point in the code here. The span correlates to copy seen in locales.-->
+
         <li next-group="proglang"><span data-l10n-id="writecode"></span></li>
         <li next-group="softtest"><span data-l10n-id="testsoftware"></span></li>
         <li next-group="support"><span data-l10n-id="usersupport"></span></li>
@@ -114,6 +117,8 @@ The below template allows us to track outbound links without bit-lys or anything
         <li next-group="uxdesign"><span data-l10n-id="uxdesign"></span></li>
       </ul>
     </div>
+
+<!-- A "group" is a place where people find actions. So, the choices here are about what to do.-->
 
     <div class="group" id="softtest">
       <span class="question" data-l10n-id="qa-intro"></span>
@@ -215,6 +220,21 @@ The below template allows us to track outbound links without bit-lys or anything
     </div>
 
     <div class="group" id="joe">
+      <span class="question" data-l10n-id="question"></span>
+        <ul class="choices">
+          <li next-group="joe-deep">joe</li>
+          <li next-group="js">JavaScript</li>
+          <li next-group="java">Java</li>
+          <li next-group="py">Python</li>
+          <li next-group="php">PHP</li>
+          <li next-group="perl">Perl</li>
+          <li next-group="c">C</li>
+          <li next-group="rust">Rust</li>
+          <li next-group="swift">Swift</li>
+        </ul>
+      </div>
+
+    <div class="group" id="joe-deep">
       <span class="question" data-l10n-id="joe-1"></span>
       <ul class="choices">
         <li target="https://webmaker.org/" data-choice-id="webmaker">Joe 1
@@ -225,6 +245,8 @@ The below template allows us to track outbound links without bit-lys or anything
         </li>
       </ul>
     </div>
+
+<!-- This is level 2 of a three leveled choice. Note the "next-group", which will push a user to the next section. -->
 
     <div class="group" id="proglang">
       <span class="question" data-l10n-id="question"></span>
